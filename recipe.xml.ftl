@@ -21,6 +21,19 @@
     <instantiate from="src/app_package/SimpleActivity.java.ftl"
                    to="${escapeXmlAttribute(srcOut)}/${activityClass}.java" />
 
+    <instantiate from="src/app_package/fragment/package-info-fragment.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/fragment/package-info.java" />
+    <instantiate from="src/app_package/manager/package-info-manager.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/manager/package-info.java" />
+    <instantiate from="src/app_package/model/package-info-model.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/model/package-info.java" />
+    <instantiate from="src/app_package/network/package-info-network.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/network/package-info.java" />
+    <instantiate from="src/app_package/util/package-info-util.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/util/package-info.java" />
+    <instantiate from="src/app_package/view/package-info-view.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/view/package-info.java" />
+
     <open file="${escapeXmlAttribute(srcOut)}/${activityClass}.java" />
     <open file="${escapeXmlAttribute(resOut)}/layout/${layoutName}.xml" />
 </recipe>
